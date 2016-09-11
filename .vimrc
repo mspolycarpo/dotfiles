@@ -3,7 +3,7 @@
 "" Sao Paulo, Brazil - 25 Jul 2016
 "" Source: https://gist.github.com/joegoggins/8482408
 
-"" GLOBAL CONFIGS
+"asdfs" GLOBAL CONFIGS
 set nocompatible	  	" Avoids conflict between system-wide and
 					  	" local vimrc files
 filetype off		  	" Set file as plain text, initially
@@ -41,8 +41,8 @@ set nu                  " Displays line number
 "" MAPPING
 
 " Maps Ctrl+S to save file
-:inoremap <c-s> <c-o>:w<CR>
-:nnoremap <c-s> :w<CR>
+inoremap <c-s> <c-o>:w<CR>
+nnoremap <c-s> :w<CR>
 
 " Typos
 command WQ wq
