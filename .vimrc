@@ -25,13 +25,11 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'     "OK
 Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'crooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
-"Plugin 'MarcWeber/vim-addon-mw-utils'
-"Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-"Plugin 'honza/vim-snippets'
+"Plugin 'ntpeters/vim-better-whitespace'
+"Plugin 'bronson/vim-trailing-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -48,7 +46,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
+highlight ExtraWhitespace ctermbg=red guibg=red
 set backspace+=indent,eol,start " Allow backspace in insert mode  
 set langmenu=none     	" Sets the default language as en_US
 set history=1000	  	" Store lots of :cmdline history
@@ -82,15 +80,19 @@ set fileformat=unix     " Avoids error in Python files
 set encoding=utf-8      " Defines encoding
 "set clipboard=unnamed   " Joins vim's clipboard with system's
 set ruler
+set bg=dark
 "set foldmethod=indent 	" Folding based on indentation
 "set noswapfile			" Turn off swap files
 "set nobackup			" Turn off backup files
 "set nowb				" Turn off auto backup writing
 "set spell              " Spell check
 
+"Line on the 80th character of the line
 let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn="80,".join(range(120,999),",")
+
+hi ExtraWhitespace guibg=#990000 ctermbg=red
 
 "" MAPPING
 
@@ -105,3 +107,6 @@ command WQ wq
 command Wq wq
 command W w
 command Q q
+
+syntax on
+colorscheme lucius
