@@ -32,6 +32,7 @@ set hidden				" Hide buffer
 syntax on 				" Highlights syntax
 set complete            " Word completion
 set nu                  " Displays line number
+set hlsearch            " Highlights all occurrences on search
 "set foldmethod=indent 	" Folding based on indentation
 "set noswapfile			" Turn off swap files
 "set nobackup			" Turn off backup files
