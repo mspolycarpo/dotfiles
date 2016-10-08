@@ -20,16 +20,12 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'   
 Plugin 'tpope/vim-surround'     "OK
 Plugin 'ctrlpvim/ctrlp.vim'
-"Plugin 'crooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
-"Plugin 'ntpeters/vim-better-whitespace'
-"Plugin 'bronson/vim-trailing-whitespace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -81,6 +77,7 @@ set encoding=utf-8      " Defines encoding
 "set clipboard=unnamed   " Joins vim's clipboard with system's
 set ruler
 set bg=dark
+set hlsearch
 "set foldmethod=indent 	" Folding based on indentation
 "set noswapfile			" Turn off swap files
 "set nobackup			" Turn off backup files

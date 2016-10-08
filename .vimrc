@@ -20,11 +20,9 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'   
-Plugin 'tpope/vim-surround'     "OK
+Plugin 'tpope/vim-surround'     
 Plugin 'ctrlpvim/ctrlp.vim'
-"Plugin 'crooloose/nerdtree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
