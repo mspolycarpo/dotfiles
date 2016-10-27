@@ -4,7 +4,7 @@
 "" Source: https://gist.github.com/joegoggins/8482408
 
 " GLOBAL CONFIGS
-set nocompatible	  	" Avoids conflict between system-wide and  
+set nocompatible	  	" Avoids conflict between system-wide and
 					  	" local vimrc files
 filetype off		  	" Set file as plain text, initially
 
@@ -20,7 +20,7 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-commentary'   
+Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'     "OK
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'davidhalter/jedi-vim'
@@ -43,7 +43,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 "highlight ExtraWhitespace ctermbg=red guibg=red
-set backspace+=indent,eol,start " Allow backspace in insert mode  
+set backspace+=indent,eol,start " Allow backspace in insert mode
 set langmenu=none     	" Sets the default language as en_US
 set history=1000	  	" Store lots of :cmdline history
 set showcmd           	" Show incomplete cmds down the bottom
@@ -72,7 +72,7 @@ set hidden				" Hide buffer
 syntax on 				" Highlights syntax
 set complete            " Word completion
 set nu                  " Displays line number
-set fileformat=unix     " Avoids error in Python files 
+set fileformat=unix     " Avoids error in Python files
 set encoding=utf-8      " Defines encoding
 "set clipboard=unnamed   " Joins vim's clipboard with system's
 set ruler
@@ -89,7 +89,10 @@ let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn="80,".join(range(120,999),",")
 
-hi ExtraWhitespace guibg=#990000 ctermbg=red
+autocmd BufWritePre * StripWhitespace
+
+let g:syntastic_python_checkers = ['flake8']
+
 
 "" MAPPING
 
