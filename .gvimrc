@@ -57,6 +57,7 @@ set colorcolumn=81
 set autoread          	" Reload files changed outside vim
 set relativenumber	  	" Display line numbers relatively to the cursor
 						" position
+set nu                  " Displays line number of current line
 set guifont=Monaco:h22  " Determinates font type and size
 set textwidth=79	  	" Set maximum line width to 80 columns
 set tabstop=4         	" The width of a TAB is set to 4.
@@ -71,7 +72,6 @@ set smartindent			" Indentation works smartly
 set hidden				" Hide buffer
 syntax on 				" Highlights syntax
 set complete            " Word completion
-set nu                  " Displays line number
 set fileformat=unix     " Avoids error in Python files
 set encoding=utf-8      " Defines encoding
 "set clipboard=unnamed   " Joins vim's clipboard with system's
