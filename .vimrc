@@ -88,6 +88,9 @@ let &colorcolumn=join(range(81,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn="80,".join(range(120,999),",")
 
+" Define with checker syntastic will use
+let g:syntastic_python_checkers = ['flake8']
+
 "" MAPPING
 
 " Maps Ctrl+S to save file
