@@ -26,6 +26,8 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'jiangmiao/auto-pairs'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,7 +60,7 @@ set autoread          	" Reload files changed outside vim
 set relativenumber	  	" Display line numbers relatively to the cursor
 						" position
 set nu                  " Displays line number of current line
-set guifont=Monaco:h22  " Determinates font type and size
+set guifont=Monaco:h16  " Determinates font type and size
 set textwidth=79	  	" Set maximum line width to 80 columns
 set tabstop=4         	" The width of a TAB is set to 4.
                       	" Still it is a \t. It is just that
@@ -99,6 +101,12 @@ inoremap <c-s> <c-o>:w<CR>
 nnoremap <c-s> :w<CR>
 " Maps space to fold/unfold
 nnoremap <space> za
+
+"Maps Multicursor plugin
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-p>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
 
 " Typos
 command WQ wq
