@@ -1,4 +1,4 @@
-[Clique aqui para ver a versão em Portuguës](README_PT.md)
+[Clique aqui para ver a versão em Português](README_PT.md)
 
 ## Dot Files
 This repo has some files used for configuration.
