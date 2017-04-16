@@ -1,7 +1,8 @@
+[Clique aqui para ver a versão em Portuguës](README_PT.md)
+
 ## Dot Files
 This repo has some files used for configuration.
-Currently it has only .vimrc and .gvimrc files that are the config files for
-Vim and MacVim, respectively.
+Currently it has the following config files:
 
 ### .vimrc
 
@@ -9,6 +10,9 @@ This file has all config used by me on my Vim.
 
 ### .gvimrc
 This file has all config used by me on my MacVim.
+
+### init.vim
+This file has all config used by me on my NeoVim
 
 ### License
 
