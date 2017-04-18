@@ -18,4 +18,4 @@ Este arquivo tem todas as configurações usadas por mim em meu NeoVim.
 
 ### Licença
 
-Estes arquivos estão licenciados sob a [Licença MIT](http://choosealicense.com/licenses/mit/)
+Estes arquivos estão licenciados sob a [Licença MIT](LICENSE)

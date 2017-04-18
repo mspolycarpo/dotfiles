@@ -16,4 +16,4 @@ This file has all config used by me on my NeoVim
 
 ### License
 
-These files are licensed under the [MIT License](http://choosealicense.com/licenses/mit/)
+These files are licensed under the [MIT License](LICENSE)
